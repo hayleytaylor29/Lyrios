@@ -6,6 +6,7 @@ import Home from './pages/index';
 import Session from './pages/session';
 import Show from './pages/show';
 import User from './pages/user';
+import styled from 'styled-components';
 
 const Nav = styled.nav`
 // background: #6B6B6B;
