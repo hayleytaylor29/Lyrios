@@ -9,7 +9,7 @@ function ShowFavVideo () {
     let getinfo = async() => {
 
 
-        let response =  await fetch('http://localhost:4000/favsong')
+        let response =  await fetch('https://testing-project-lyrios.herokuapp.com/favsong')
 
 
         let data = await response.json();

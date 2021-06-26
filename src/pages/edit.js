@@ -9,7 +9,7 @@ function Edit () {
     let getinfo = async() => {
         console.log(localStorage.getItem('SessionEmail'))
 
-        let response =  await fetch ('http://localhost:4000/favsong')
+        let response =  await fetch ('https://testing-project-lyrios.herokuapp.com/favsong')
 
 
         let data = await response.json();
@@ -28,7 +28,7 @@ function Edit () {
     // console.log(data[0]._id)
     console.log(infoArray[0]._id)
     // await Axios.put(`http://localhost:4000/favsong/edit/${infoArray[0]._id}`, {whyFavorite: 'No Reason'})
-    fetch(`http://localhost:4000/favsong/edit/${infoArray[0]._id}`, {
+    fetch(`https://testing-project-lyrios.herokuapp.com/favsong/edit/${infoArray[0]._id}`, {
         method: 'PUT',
         body: JSON.stringify({
             whyFavorite: searchQuery
