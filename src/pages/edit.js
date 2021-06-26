@@ -59,6 +59,7 @@ function Edit () {
     React.useEffect(()=>{
         getinfo()
         console.log('running use effect')
+        console.log('hi')
     },[])
     return(
         <div>
