@@ -7,6 +7,8 @@ import Session from './pages/session';
 import Show from './pages/show';
 import User from './pages/user';
 import styled from 'styled-components';
+import { NavLink as Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 
 const Nav = styled.nav`
 // background: #6B6B6B;
