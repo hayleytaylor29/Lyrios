@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './pages/index';
 import Session from './pages/session';
 import Show from './pages/show';
+import Edit from './pages/edit';
 import User from './pages/user';
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
@@ -101,6 +102,9 @@ function App() {
           </Route>
           <Route path='/user'>
             <User/>
+          </Route>
+          <Route path = '/edit'>
+          <Edit/>
           </Route>
           <Route path='/'>
             <Home/>
