@@ -10,7 +10,7 @@ const SearchOutput = (data) => {
     // console.log(lyricsData)
     let addtofav = () => {
         
-        fetch('https://testing-project-lyrios.herokuapp.com/favsong', {
+        fetch('https://git.heroku.com/lyrios-app.git', {
         method: "post",
         headers: {
           Accept: "application/json",

@@ -8,7 +8,7 @@ const UserOutput = (data) => {
     console.log(data.userData[0])
     console.log(data.userData[0]._id)
     const deleteFavorite = async () => {
-    await Axios.delete(`https://testing-project-lyrios.herokuapp.com/favsong/${data.userData[0]._id}`)
+    await Axios.delete(`https://git.heroku.com/lyrios-app.git/favsong/${data.userData[0]._id}`)
     console.log('Deleting favorite song')
     window.location.reload();
     }
