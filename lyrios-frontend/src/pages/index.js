@@ -60,9 +60,9 @@ const hasLyrics = "&lyrics=1";
 const limit = "&limit=";
 const lyricsType = "&type=";
 //api key 1
-// const apiLyricsKey = "&apikey=6d400baq5E0tR7e8ItaBRyijAyJVpD9qLDYxcli0AwBHLoMayAPtZaNr";   
+const apiLyricsKey = "&apikey=6d400baq5E0tR7e8ItaBRyijAyJVpD9qLDYxcli0AwBHLoMayAPtZaNr";   
 //api key 2
-const apiLyricsKey = "&apikey=78e089Xdo4n4bW6uzrz5HaYLJ3E801KK7uQ0LQlJFsZ7ROy1mr0ZDyjR";    
+// const apiLyricsKey = "&apikey=78e089Xdo4n4bW6uzrz5HaYLJ3E801KK7uQ0LQlJFsZ7ROy1mr0ZDyjR";    
 
     const getLyricsArray = async (searchTerm) => {
         try{
@@ -70,6 +70,7 @@ const apiLyricsKey = "&apikey=78e089Xdo4n4bW6uzrz5HaYLJ3E801KK7uQ0LQlJFsZ7ROy1mr
         `${baseLyricsURL}${limit}${apiLyricsKey}${lyricsType}${hasLyrics}&q=${searchTerm}`
         )
         console.log(searchTerm)
+        console.log('hi')
         console.log(response.data)
         console.log(response.data.result[0].api_lyrics)
         getLyricsData(response.data.result[0].api_lyrics)
